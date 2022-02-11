@@ -1,0 +1,1422 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --yellow: #f0cc03;
+  --red: #ce0101;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  background-image: url(asset/img/topography.png);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#192a56, #0230a3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgb(212, 0, 0));
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #04d115);
+  border-radius: 6px;
+}
+
+/* TOMBOL */
+.tombol {
+  z-index: 99999;
+}
+.tombol i {
+  position: fixed;
+  font-size: 45px;
+  color: rgb(179, 179, 179);
+  bottom: 10%;
+  right: 30px;
+  opacity: 50%;
+}
+.tombol i:hover {
+  color: #666;
+  opacity: 100%;
+}
+/* AKHIR TOMBOL */
+
+/* NAVBAR */
+nav {
+  position: relative;
+  background-image: url(asset/img/bg-navbar.svg);
+}
+
+nav a {
+  margin: 5px;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+nav a:hover {
+  color: var(--yellow);
+  background-color: var(--green);
+  border-radius: 8px;
+  transition: all ease 0.5s;
+}
+
+/* CARAOUSEL */
+.home .home-slider .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.home .home-slider .slide .image img {
+  position: absolute;
+  width: 35%;
+  left: 3%;
+}
+.home .home-slider .slide .image img:hover {
+  width: 40%;
+}
+
+.home .home-slider .slide .isi {
+  position: absolute;
+  left: 48%;
+  top: 20vh;
+}
+
+.home .home-slider .slide .content span {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.home .home-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 18px;
+  padding: 0.5rem 0;
+  width: 500px;
+  line-height: 1.5;
+}
+
+.home .home-slider .slide .content .btn {
+  font-size: 24px;
+  color: white;
+  background-color: var(--black);
+  transition: all ease-in-out 0.3s;
+}
+.home .home-slider .slide .content .btn:hover {
+  color: white;
+  background-color: var(--green);
+  letter-spacing: 2px;
+}
+.home .home-slider .slide .content .btn:hover .swiper-pagination-bullet-active {
+  background: var(--green);
+}
+/* AKHIR CARAOUSEL */
+
+/* DISHES */
+#dishes {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.dishes h2 {
+  color: var(--green);
+}
+.dishes h1 {
+  color: var(--black);
+  font-size: 26px;
+}
+
+.dishes .card {
+  width: 365px;
+  height: 365px;
+  border: none;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dishes .card img {
+  width: 275px;
+  left: 40px;
+  position: absolute;
+  top: -25px;
+  margin: 1rem 0;
+}
+.dishes .card img:hover {
+  width: 300px;
+}
+
+.dishes .card .deskrip {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+.dishes .card h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.dishes .card .stars i {
+  font-size: 1.7rem;
+  color: var(--yellow);
+}
+
+.dishes .card .deskrip .btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+}
+
+.dishes .card .deskrip .btn:hover {
+  background: var(--green);
+}
+
+.dishes .card .deskrip .btn2 {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: var(--black);
+  background: rgb(200, 200, 200);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 5rem;
+  cursor: text;
+  margin-left: -55px;
+}
+/* AKHIR DISHES */
+/* ABOUT */
+.about {
+  margin-top: 7rem;
+}
+
+.about h1 {
+  color: var(--green);
+  font-size: 26px;
+}
+.about h2 {
+  color: var(--black);
+  font-size: 36px;
+}
+.about p {
+  color: var(--black);
+  font-size: 18px;
+}
+
+.about p:nth-child(1) {
+  color: var(--green);
+}
+
+.about img {
+  width: 300px;
+}
+
+.about .narasi {
+  margin-top: 5rem;
+}
+.about .narasi .kotak {
+  display: flex;
+}
+.about .narasi .kotak .btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  color: #fff;
+  background: var(--green);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+}
+.about .narasi .kotak .btn3 {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  color: var(--black);
+  background: rgb(200, 200, 200);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 5rem;
+  text-decoration: none;
+}
+.about .narasi .kotak .btn3:hover {
+  background: var(--green);
+  color: #fff;
+}
+.about .narasi .kotak .btn:hover {
+  background: var(--black);
+}
+/* AKHIR ABOUT */
+/* TESTIMONI */
+
+.testi h1 {
+  position: relative;
+  margin-top: 7rem;
+  color: var(--red);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.testi .testi-slider .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  height: 70vh;
+  background-color: yellowgreen;
+}
+
+.testi .testi-slider .slide .content {
+  display: flex;
+  align-items: center;
+}
+
+.testi .testi-slider .slide .image {
+  width: 350px;
+  padding: 30px;
+  z-index: 100;
+}
+
+.testi .testi-slider .slide .image img {
+  width: 100%;
+}
+
+.testi .testi-slider .slide .isi {
+  width: 700px;
+  height: 100%;
+}
+
+.testi .testi-slider .slide .content span {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.testi .testi-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.testi .testi-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.testi .testi-slider .slide .content .btn {
+  font-size: 20px;
+  color: white;
+  background-color: var(--black);
+  transition: all ease-in-out 0.3s;
+}
+.testi .testi-slider .slide .content .btn:hover {
+  color: var(--black);
+  background-color: white;
+  letter-spacing: 2px;
+}
+.testi .testi-slider .slide .content .btn:hover .swiper-pagination-bullet-active {
+  background: var(--green);
+}
+
+.testi .testi-slider .slide .content .bintang {
+  color: rgb(248, 248, 19);
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+
+.testi .testi-slider .slide .content .lokasi {
+  display: flex;
+}
+
+.testi .testi-slider .slide .content .lokasi i {
+  font-size: 24px;
+  color: var(--black);
+}
+
+.testi .testi-slider .slide .content .lokasi span {
+  color: var(--black);
+}
+/* Akhir TESTI */
+/* KONTAK */
+.kontak {
+  margin-top: 9rem;
+}
+
+.kontak h1 {
+  color: var(--black);
+  font-size: 36px;
+}
+.kontak h2 {
+  color: var(--green);
+  font-size: 24px;
+}
+
+.kontak .konten {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+.kontak .whatsapp {
+  background-color: var(--green);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.kontak .whatsapp a,
+.kontak .email a,
+.kontak .instagram a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.kontak .whatsapp i,
+.kontak .email i,
+.kontak .instagram i {
+  padding-right: 10px;
+  font-size: 24px;
+}
+
+.kontak .whatsapp:hover {
+  background-color: #b6b600;
+}
+
+.kontak .email {
+  background-color: #b6b600;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.kontak .email:hover {
+  background-color: #f3149d;
+}
+
+.kontak .instagram {
+  background-color: #f3149d;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.kontak .instagram:hover {
+  background-color: #b6b600;
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(#d80000, #8a0000);
+}
+
+.footer .footer-konten {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer img {
+  width: 200px;
+  padding-top: 5rem;
+}
+
+.footer .footer-konten h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: var(--yellow);
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.footer .footer-konten ul li a {
+  display: block;
+  padding: 0.2rem 0;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  list-style: none;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.footer .footer-konten ul li a:hover {
+  color: #119cec;
+}
+
+.footer .footer-konten i {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 12px;
+  color: var(--black);
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+}
+
+.footer .credit span {
+  color: var(--red);
+}
+/* AKHIR FOOTER */
+
+/* DEKSTOP */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .home .home-slider .slide .isi {
+    margin-top: -2rem;
+  }
+  .home .home-slider .slide .image img {
+    margin-top: 2rem;
+  }
+  .home .home-slider .slide .content span {
+    font-size: 2.5rem;
+  }
+  .home .home-slider .slide .content h3 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .home .home-slider .slide .content p {
+    font-size: 18px;
+    width: 500px;
+  }
+  .home .home-slider .slide .content .btn {
+    font-size: 20px;
+  }
+  /* DISHES */
+  .dishes .card {
+    width: 305px;
+    height: 305px;
+  }
+  .dishes .card img {
+    width: 215px;
+    left: 40px;
+    position: absolute;
+    top: -25px;
+    margin: 1rem 0;
+  }
+  .dishes .card img:hover {
+    width: 225px;
+  }
+
+  .dishes .card h3 {
+    color: var(--black);
+    font-size: 2rem;
+  }
+
+  .dishes .card .stars i {
+    font-size: 1.4rem;
+    color: var(--yellow);
+  }
+  .dishes .card .deskrip .btn {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+  }
+  .dishes .card .deskrip .btn2 {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 0.6rem 4rem;
+    margin-left: -55px;
+  }
+  /* ABOUT */
+  /* TESTIMONI */
+  .testi h1 {
+    margin-top: 7rem;
+    font-size: 26px;
+  }
+  .testi .testi-slider .slide {
+    margin-top: 3rem;
+    height: 70vh;
+  }
+  .testi .testi-slider .slide .content {
+    display: flex;
+    align-items: center;
+  }
+  .testi .testi-slider .slide .image {
+    width: 350px;
+    padding: 30px;
+  }
+  .testi .testi-slider .slide .isi {
+    width: 570px;
+    height: 100%;
+  }
+  .testi .testi-slider .slide .content span {
+    color: white;
+    font-size: 2.5rem;
+  }
+  .testi .testi-slider .slide .content h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .testi .testi-slider .slide .content p {
+    font-size: 18px;
+  }
+  .testi .testi-slider .slide .content .btn {
+    font-size: 20px;
+    color: white;
+  }
+  .testi .testi-slider .slide .content .bintang {
+    color: rgb(248, 248, 19);
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+  .testi .testi-slider .slide .content .lokasi i {
+    font-size: 24px;
+    color: var(--black);
+  }
+  /* KONTAK */
+  .kontak {
+    margin-top: 8rem;
+  }
+  .kontak h1 {
+    font-size: 32px;
+  }
+  .kontak h2 {
+    font-size: 24px;
+  }
+  .kontak .konten {
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    color: #fff;
+    font-size: 18px;
+  }
+  .kontak .whatsapp {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .kontak .whatsapp a,
+  .kontak .email a,
+  .kontak .instagram a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .kontak .whatsapp i,
+  .kontak .email i,
+  .kontak .instagram i {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .kontak .email {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .kontak .instagram {
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* NAVBAR */
+  nav a {
+    margin: 0px;
+    font-size: 18px;
+    background-color: #d80000;
+  }
+  /* SLIDER */
+  .home .home-slider .slide {
+    margin-top: 7rem;
+  }
+  .home .home-slider .slide .isi {
+    margin-top: -2rem;
+    left: 8%;
+    top: 45vh;
+  }
+  .home .home-slider .slide .image img {
+    margin-top: 2rem;
+    width: 35%;
+    left: 55%;
+  }
+  .home .home-slider .slide .content span {
+    font-size: 2.5rem;
+  }
+  .home .home-slider .slide .content h3 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .home .home-slider .slide .content p {
+    font-size: 18px;
+    width: 650px;
+  }
+  .home .home-slider .slide .content .btn {
+    font-size: 20px;
+  }
+  /* DISHES */
+  .dishes .card {
+    width: 230px;
+    height: 280px;
+  }
+  .dishes .card img {
+    width: 70%;
+    left: 35px;
+    position: absolute;
+    top: 0px;
+    margin: 1rem 0;
+  }
+  .dishes .card img:hover {
+    width: 75%;
+  }
+
+  .dishes .card h3 {
+    color: var(--black);
+    font-size: 1.6rem;
+  }
+
+  .dishes .card .stars i {
+    font-size: 1.4rem;
+    color: var(--yellow);
+  }
+  .dishes .card .deskrip .btn {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+  .dishes .card .deskrip .btn2 {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 0.5rem 2.3rem;
+    margin-left: -25px;
+  }
+  /* ABOUT */
+  .about {
+    margin-top: 5rem;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+  .about img {
+    width: 80%;
+  }
+  .about .narasi {
+    margin-top: 5rem;
+  }
+  .about .narasi .kotak {
+    display: flex;
+  }
+  .about .narasi .kotak .btn {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: #fff;
+    padding: 0.8rem 2rem;
+  }
+  .about .narasi .kotak .btn3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: var(--black);
+    padding: 0.8rem 5rem;
+  }
+  /* TESTIMONI */
+  .testi h1 {
+    margin-top: 4rem;
+    font-size: 26px;
+  }
+  .testi .testi-slider .slide {
+    margin-top: 3rem;
+    height: 70vh;
+  }
+  .testi .testi-slider .slide .content {
+    display: flex;
+    align-items: center;
+  }
+  .testi .testi-slider .slide .image {
+    width: 50%;
+    padding: 30px;
+  }
+  .testi .testi-slider .slide .isi {
+    width: 600px;
+    height: 50%;
+  }
+  .testi .testi-slider .slide .content span {
+    color: white;
+    font-size: 2rem;
+  }
+  .testi .testi-slider .slide .content h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .testi .testi-slider .slide .content p {
+    font-size: 14px;
+  }
+  .testi .testi-slider .slide .content .btn {
+    font-size: 20px;
+    color: white;
+  }
+  .testi .testi-slider .slide .content .bintang {
+    color: rgb(248, 248, 19);
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+  .testi .testi-slider .slide .content .lokasi i {
+    font-size: 24px;
+    color: var(--black);
+  }
+  /* KONTAK */
+  .kontak {
+    margin-top: 8rem;
+  }
+  .kontak h1 {
+    font-size: 24px;
+  }
+  .kontak h2 {
+    font-size: 20px;
+  }
+  .kontak .konten {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    color: #fff;
+    font-size: 18px;
+    display: list-item;
+  }
+  .kontak .whatsapp {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .kontak .whatsapp a,
+  .kontak .email a,
+  .kontak .instagram a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .kontak .whatsapp i,
+  .kontak .email i,
+  .kontak .instagram i {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .kontak .email {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .kontak .instagram {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  /* FOOTER */
+  .footer .footer-konten {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer img {
+    width: 150px;
+    padding-top: 5rem;
+  }
+
+  .footer .footer-konten h3 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-top: 5rem;
+    font-weight: 600;
+  }
+
+  .footer .footer-konten ul li a {
+    display: block;
+    padding: 0.2rem 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+
+  .footer .footer-konten ul li a:hover {
+    color: #119cec;
+  }
+
+  .footer .footer-konten i {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .footer .credit {
+    text-align: center;
+    font-size: 12px;
+    color: var(--black);
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: white;
+  }
+
+  .footer .credit span {
+    color: var(--red);
+  }
+}
+/* LANSCAPE */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* NAVBAR */
+  nav a {
+    margin: 0px;
+    font-size: 18px;
+    background-color: #d80000;
+  }
+  /* SLIDER */
+  .home .home-slider .slide {
+    margin-top: 7rem;
+  }
+  .home .home-slider .slide .isi {
+    margin-top: 0;
+    left: 3%;
+    top: 40vh;
+  }
+  .home .home-slider .slide .image img {
+    margin-top: -1rem;
+    width: 45%;
+    left: 30%;
+  }
+  .home .home-slider .slide .image img:hover {
+    width: 50%;
+  }
+  .home .home-slider .slide .content span {
+    font-size: 1.7rem;
+  }
+  .home .home-slider .slide .content h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .home .home-slider .slide .content p {
+    font-size: 14px;
+    width: 450px;
+  }
+  .home .home-slider .slide .content .btn {
+    font-size: 25px;
+  }
+  /* DISHES */
+  .dishes .card {
+    width: 100%;
+    height: 400px;
+  }
+  .dishes .card img {
+    width: 45%;
+    left: 27%;
+    position: absolute;
+    top: -20px;
+    margin: 1rem 0;
+  }
+  .dishes .card img:hover {
+    width: 50%;
+  }
+
+  .dishes .card h3 {
+    color: var(--black);
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .dishes .card .stars i {
+    font-size: 1.7rem;
+    color: var(--yellow);
+  }
+  .dishes .card .deskrip .btn {
+    width: 80%;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0.6rem 2rem;
+  }
+  .dishes .card .deskrip .btn2 {
+    width: 80%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.7rem 8rem;
+    margin-left: 0px;}
+  /* ABOUT */
+  .about {
+    margin-top: 5rem;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+  .about h2 {
+    font-size: 24px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+  .about img {
+    width: 80%;
+  }
+  .about .narasi {
+    margin-top: 5rem;
+  }
+  .about .narasi .kotak {
+    display: list-item;
+  }
+  .about .narasi .kotak .btn {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: #fff;
+    padding: 0.8rem 2rem;
+  }
+  .about .narasi .kotak .btn3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: var(--black);
+    padding: 0.8rem 5rem;
+  }
+  /* TESTIMONI */
+  .testi h1 {
+    margin-top: 4rem;
+    font-size: 24px;
+  }
+  .testi .testi-slider .slide {
+    margin-top: 3rem;
+    height: 70vh;
+  }
+  .testi .testi-slider .slide .content {
+    display: flex;
+    align-items: center;
+  }
+  .testi .testi-slider .slide .image {
+    width: 50%;
+    padding: 30px;
+  }
+  .testi .testi-slider .slide .isi {
+    width: 400px;
+    height: 20%;
+  }
+  .testi .testi-slider .slide .content span {
+    color: white;
+    font-size: 2rem;
+  }
+  .testi .testi-slider .slide .content h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .testi .testi-slider .slide .content p {
+    font-size: 14px;
+  }
+  .testi .testi-slider .slide .content .btn {
+    font-size: 16px;
+    color: white;
+  }
+  .testi .testi-slider .slide .content .bintang {
+    color: rgb(248, 248, 19);
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+  .testi .testi-slider .slide .content .lokasi i {
+    font-size: 24px;
+    color: var(--black);
+  }
+  /* KONTAK */
+  .kontak {
+    margin-top: 8rem;
+  }
+  .kontak h1 {
+    font-size: 20px;
+  }
+  .kontak h2 {
+    font-size: 18px;
+  }
+  .kontak .konten {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    color: #fff;
+    font-size: 18px;
+    display: list-item;
+  }
+  .kontak .whatsapp {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .kontak .whatsapp a,
+  .kontak .email a,
+  .kontak .instagram a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .kontak .whatsapp i,
+  .kontak .email i,
+  .kontak .instagram i {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .kontak .email {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .kontak .instagram {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  /* FOOTER */
+  .footer .footer-konten {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer img {
+    width: 150px;
+    padding-top: 5rem;
+  }
+
+  .footer .footer-konten h3 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-top: 5rem;
+    font-weight: 600;
+  }
+
+  .footer .footer-konten ul li a {
+    display: block;
+    padding: 0.2rem 0;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+
+  .footer .footer-konten ul li a:hover {
+    color: #119cec;
+  }
+
+  .footer .footer-konten i {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .footer .credit {
+    text-align: center;
+    font-size: 12px;
+    color: var(--black);
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: white;
+  }
+
+  .footer .credit span {
+    color: var(--red);
+  }
+}
+/* POTRAIT */
+@media screen and (max-width: 575px) {
+  /* NAVBAR */
+  nav a {
+    font-size: 12px;
+  }
+  header .logo img {
+    width: 50px;
+  }
+  nav .active {
+    font-size: 14px;
+  }
+  /* SLIDER */
+  .home .home-slider .slide {
+    margin-top: 7rem;
+  }
+  .home .home-slider .slide .isi {
+    margin-top: 0;
+    left: 3%;
+    top: 40vh;
+  }
+  .home .home-slider .slide .image img {
+    margin-top: -1rem;
+    width: 75%;
+    left: 10%;
+  }
+  .home .home-slider .slide .image img:hover {
+    width: 80%;
+  }
+  .home .home-slider .slide .content span {
+    font-size: 1.7rem;
+  }
+  .home .home-slider .slide .content h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  .home .home-slider .slide .content p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .home .home-slider .slide .content .btn {
+    font-size: 18px;
+  }
+  /* DISHES */
+
+  .dishes .card {
+    width: 100%;
+    height: 350px;
+  }
+  .dishes .card img {
+    width: 50%;
+    left: 25%;
+    position: absolute;
+    top: -10px;
+    margin: 1rem 0;
+  }
+  .dishes .card img:hover {
+    width: 55%;
+  }
+
+  .dishes .card h3 {
+    color: var(--black);
+    font-size: 2.3rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .dishes .card .stars i {
+    font-size: 1.7rem;
+    color: var(--yellow);
+  }
+  .dishes .card .deskrip .btn {
+    width: 80%;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0.6rem 2rem;
+  }
+  .dishes .card .deskrip .btn2 {
+    width: 80%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.7rem 8rem;
+    margin-left: 0px;
+  }
+  /* ABOUT */
+  .about {
+    margin-top: 5rem;
+  }
+  .about h1 {
+    font-size: 16px;
+  }
+  .about h2 {
+    font-size: 18px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about .narasi {
+    margin-top: 5rem;
+  }
+  .about .narasi .kotak {
+    display: list-item;
+  }
+  .about .narasi .kotak .btn {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    padding: 0.8rem 2rem;
+  }
+  .about .narasi .kotak .btn3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: var(--black);
+    padding: 0.8rem 3rem;
+  }
+  /* TESTIMONI */
+  .testi h1 {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  .testi .testi-slider .slide {
+    margin-top: 1rem;
+    height: 90vh;
+  }
+  .testi .testi-slider .slide .content {
+    display: list-item;
+    align-items: center;
+  }
+  .testi .testi-slider .slide .image {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+    margin-left: 9%;
+  }
+  .testi .testi-slider .slide .isi {
+    width: 85%;
+    margin-left: 8%;
+    margin-top: -2rem;
+  }
+  .testi .testi-slider .slide .content span {
+    color: white;
+    font-size: 1.7rem;
+  }
+  .testi .testi-slider .slide .content h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .testi .testi-slider .slide .content p {
+    font-size: 14px;
+  }
+  .testi .testi-slider .slide .content .btn {
+    font-size: 16px;
+    color: white;
+  }
+  .testi .testi-slider .slide .content .bintang {
+    color: rgb(248, 248, 19);
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+  .testi .testi-slider .slide .content .lokasi i {
+    font-size: 24px;
+    color: var(--black);
+  }
+  /* KONTAK */
+  .kontak {
+    margin-top: 5rem;
+  }
+  .kontak h1 {
+    font-size: 14px;
+  }
+  .kontak h2 {
+    font-size: 16px;
+  }
+  .kontak .konten {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-size: 18px;
+    display: list-item;
+  }
+  .kontak .whatsapp {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .kontak .whatsapp a,
+  .kontak .email a,
+  .kontak .instagram a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .kontak .whatsapp i,
+  .kontak .email i,
+  .kontak .instagram i {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .kontak .email {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .kontak .instagram {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  /* FOOTER */
+  .footer .footer-konten {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer img {
+    width: 150px;
+    padding-top: 5rem;
+  }
+
+  .footer .footer-konten h3 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-top: 5rem;
+    font-weight: 600;
+  }
+
+  .footer .footer-konten ul li a {
+    display: block;
+    padding: 0.2rem 0;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+
+  .footer .footer-konten ul li a:hover {
+    color: #119cec;
+  }
+
+  .footer .footer-konten i {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .footer .credit {
+    text-align: center;
+    font-size: 12px;
+    color: var(--black);
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: white;
+  }
+
+  .footer .credit span {
+    color: var(--red);
+  }
+}
